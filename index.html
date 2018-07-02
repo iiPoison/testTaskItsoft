@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Контактные линзы</title>
+    <link rel="icon" href="./res/img/favicon.ico" type="image/x-icon">
+    <!-- For Responsive WEB pages -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <!-- CSS -->
+    <link href="./res/css/reset.css" type="text/css" rel="stylesheet">
+    <link href="./res/css/style.css" type="text/css" rel="stylesheet">
+    <!-- Scrollbar Custom CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
+    <!-- Font Awsome -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+    <!--
+      font-family: 'Open Sans', sans-serif;
+      font-family: 'Open Sans Condensed', sans-serif;
+      font-family: 'Roboto', sans-serif;
+    -->
+    <!-- вот этот код надо както интегрировать в sass файл -->
+    <style media="screen">
+      #content {
+        width: calc(100% - 250px);
+      }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <!-- Sidebar  -->
+        <nav id="sidebar">
+          <!-- блок с иконками вендеров -->
+          <div class="socialNetwork">
+            <a href="#"><i class="fab fa-facebook-f "></i></a>
+            <a href="#"><i class="fab fa-twitter "></i></a>
+            <a href="#"><i class="fab fa-skype "></i></a>
+          </div>
+
+          <!-- блок который делит nav и hotlineNumber и красиво выравнивает по space-between по вертикали -->
+          <div class="devideNavAndHitline">
+            <!-- основная навигация на левом навигационом блоке -->
+            <div class="nav">
+              <ul>
+                <li><a href="#">О компании</a></li>
+                <li><a href="#">О проблемах</a></li>
+                <li><a href="#">Каталог</a></li>
+                <li><a href="#">Где купить</a></li>
+                <li><a href="#">Вопрос-ответ</a></li>
+                <li><a href="#">On-line тест</a></li>
+                <li><a href="#">Контакты</a></li>
+              </ul>
+            </div> <!-- end .nav -->
+
+            <!-- Блок с телефоном горячей линии -->
+            <div class="hotlineNumber">
+              <div class="justLine"></div>
+              <ul>
+                <li>Горячяя линия</li>
+                <li>по России</li>
+                <li>8-800-000-00-00</li>
+              </ul>
+            </div> <!-- end .hotlineNumber -->
+          </div> <!-- end .devideNavAndHitline -->
+
+        </nav> <!-- end #sideBar -->
+
+        <!-- Page Content  -->
+        <div id="content">
+
+          <section id="topLogoContent">
+
+            <div class="logoContent">
+
+              <button type="button" id="sidebarCollapse" >
+                <i class="fas fa-align-justify fa-2x"></i>
+              </button>
+
+              <div class="logoBL">
+                <a href="#"> <img src="./res/img/logo/bausch_lomb_logo.svg" alt="Logotype Bausch & Lomb"></a>
+              </div>
+
+              <div class="logoV">
+                <a href="#"> <img src="./res/img/logo/valeant_logo.png" alt="Logotype Valeant"></a>
+              </div>
+
+            </div> <!-- end .logoContent -->
+
+            <div class="askQuetions">
+              <i class="far fa-comment"></i><span>Задать вопрос производителю</span>
+            </div>
+
+          </section> <!-- end #topLogo -->
+
+          <!-- блок с четыремя цветными блоками -->
+          <section id="fourPromoBlock">
+
+            <!-- блок с двумя цветными блоками: синий и красный-->
+            <div class="doubleColorBlock">
+              <div id="blueBlock">
+                <div class="blockHeader">
+                  <h2>Усталость</h2>
+                </div>
+
+                <div class="blockImage">
+                  <div class="blockEye">
+                    <img src="./res/img/eyes/blue_eye_active.png">
+                  </div>
+                </div>
+
+                <div class="blockProduct">
+                  <div class="productImage">
+                    <img src="./res/img/product/lutein_child.png" alt="Лютеин детский">
+                  </div>
+
+                  <div class="productImage">
+                    <img src="./res/img/product/lutein_adult.png" alt="Лютеин">
+                  </div>
+                </div>
+
+              </div>
+
+              <div id="redBlock">
+                <div class="blockHeader">
+                  <h2>Укрепление сосудов <br> глаз</h2>
+                </div>
+
+                <div class="blockImage">
+                  <div class="blockEye">
+                    <img src="./res/img/eyes/red_eye.png">
+                  </div>
+                </div>
+
+                <div class="blockProduct">
+                  <div class="productImage">
+                    <img src="./res/img/product/lutein_child.png" alt="Лютеин детский">
+                  </div>
+
+                  <div class="productImage">
+                    <img src="./res/img/product/lutein_adult.png" alt="Лютеин">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- блок с двумя цветными блоками: зеленый и желтый-->
+            <div class="doubleColorBlock">
+              <div id="greenBlock">
+                <div class="blockHeader">
+                  <h2>Защита здорового зрения <br> на долгие годы</h2>
+                </div>
+
+                <div class="blockImage">
+                  <div class="blockEye">
+                    <img src="./res/img/eyes/green_eye.png">
+                  </div>
+                </div>
+
+                <div class="blockProduct">
+                  <div class="productImage">
+                    <img src="./res/img/product/lutein_child.png" alt="Лютеин детский">
+                  </div>
+
+                  <div class="productImage">
+                    <img src="./res/img/product/lutein_adult.png" alt="Лютеин">
+                  </div>
+                </div>
+              </div>
+
+              <div id="yellowBlock">
+                <div class="blockHeader">
+                  <h2>Снижение риска развития <br> возрастных изменений глаз</h2>
+                </div>
+
+                <div class="blockImage">
+                  <div class="blockEye">
+                    <img src="./res/img/eyes/yellow_eye.png">
+                  </div>
+                </div>
+
+                <div class="blockProduct">
+                  <div class="productImage">
+                    <img src="./res/img/product/lutein_child.png" alt="Лютеин детский">
+                  </div>
+
+                  <div class="productImage">
+                    <img src="./res/img/product/lutein_adult.png" alt="Лютеин">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </section><!-- end #fourPromoBlock -->
+
+          <section id="promoCarousel">
+            <h1>Тут будет карусель из слайдов</h1>
+          </section><!-- end #promoCarousel -->
+
+          <section id="riskGroup">
+            <h2>Группы риска:</h2>
+            <div class="riskContent">
+              <div class="bigImgWithGirl">
+                <img src="./res/img/riskGroup/girl.png" alt="красивая девочка студентка с планшетом">
+              </div>
+              <div class="riskDescription">
+                <h3>Школьники и студенты</h3>
+                <p>
+                  В последнее десятилетие врачи отмечают печальну тенденцию:<br>
+                  все чаще у детей школьного возраста выявляются болезни органов<br>
+                  зрения.Сложный оптический приборидеально<br>
+                  приспосабливающийся к изменчивым условиям окружающей среды,<br>
+                  глаз оказался не подготовленным к современным реалиям.<br>
+                </p>
+                <a class="singlePromoBtn" href="#">Подробнее</a>
+                <div class="groupPromoBtn">
+
+                  <ul class="promoBtn">
+                    <li><a href="#">Работающие за компьютером</a></li>
+                    <li><a href="#">Школьники и студенты</a></li>
+                    <li><a href="#">Автолюбители</a></li>
+                  </ul>
+
+                  <ul class="promoBtn">
+                    <li><a href="#">Люди с повышенным зрительными нагрузками</a></li>
+                    <li><a href="#">Туристы</a></li>
+                  </ul>
+
+                </div> <!-- end groupPromoBtn. -->
+              </div> <!-- end .riskDescription -->
+            </div> <!-- end .riskContent -->
+
+          </section><!-- end #riskGroup -->
+
+          <section id="testAndMap">
+            <div class="testAndMapContent">
+              <div class="testOnline">
+                <h2>On-line Тест</h2>
+                <p>
+                  Мы предлагаем пройти небольшой тест, который поможет <br>
+                  легко и комфортно проверить <strong>остроту</strong>, <strong>контрастность</strong> и <br>
+                  <strong>цветовосприятие</strong> вашего зрения. <br>
+                </p>
+                <div class="alignBtn">
+                  <a href="#">Пройти тест</a>
+                </div>
+
+                <div class="recomendation">
+                  <img src="./res/img/testAndMap/check.png">
+                  <p>
+                    Если по результатам теста Вы отметите ухудшение зрения, <br>
+                    Вам следует обратиться к офтальмологу за дополнительной <br>
+                    консультацией
+                  </p>
+                </div>
+
+              </div> <!-- end .testOnline -->
+              <div class="map">
+                <h2>Где купить</h2>
+                <p>
+                  Препараты можно преобрести в аптеках по всей России, <br>
+                  а так же в интернет аптеках
+                </p>
+
+                <div class="alignBtn">
+                  <a href="#">Подробнее</a>
+                </div>
+
+              </div> <!-- end .map -->
+            </div> <!-- end .testAndMapContent -->
+            <div class="testAndMapFooter">
+              <p>
+                Имеются противопоказания. Перед применением ознакомтесь <br>
+                с инструкцией и проконсультируйтесь со специальистом
+              </p>
+            </div>
+
+          </section><!-- end #testAndMap -->
+
+          <footer id="mainFooter">
+            <div class="footerLogo">
+              <div class="footerLogoValeant">
+                <img src="./res/img/logo/valeant_logo.png">
+              </div>
+              <div class="footerCompanyProps">
+                <ul>
+                  <li>ООО "ВАЛЕАНТ", 115162, г.Москва, ул.Шаболовска, д.31, стр.5</li>
+                  <li>Тел./Факс: +7 495 510-2879 www.valeant.com</li>
+                </ul>
+              </div>
+
+              <div class="footerLogoItsoft">
+                <img src="./res/img/logo/itsoft_logo.png">
+                <ul>
+                  <li>Создание сайта.</li>
+                  <li>Веб-студия <span>itsoft</span></li>
+                </ul>
+              </div>
+
+            </div>
+          </footer><!-- end #mainFooter -->
+
+        </div> <!-- end #contents --->
+    </div>
+
+
+
+    <!-- jQuery CDN - Slim version (=without AJAX) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <!-- Popper.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+    <!-- jQuery Custom Scroller CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+
+    <script src="./res/js/sidebarCollaps.js"></script>
+
+</body>
+
+</html>
