@@ -1,42 +1,43 @@
 body {
   font-size: 16px;
-  font-family: 'Open Sans', sans-serif !important; }
+  font-family: 'Open Sans', sans-serif !important;
+  /* end .wrapper */ }
   body .wrapper {
-    display: flex;
-    width: 100%; }
+    /* end #sideBar */
+    /* end #content */ }
     body .wrapper #sidebar {
-      width: 250px;
+      width: 200px;
+      height: 100%;
       position: fixed;
       top: 0;
       left: 0;
-      height: 100vh;
       z-index: 999;
       background: #005494;
       color: #fff;
       transition: all 0.3s;
       display: flex;
       flex-direction: column;
-      /* end .devideNavAndHitline */ }
-      body .wrapper #sidebar .socialNetwork {
-        width: 100%;
-        height: 2.5rem;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: flex-start;
-        margin-left: 2rem; }
-        body .wrapper #sidebar .socialNetwork a {
-          color: #518EBD;
-          margin: 0 0.4rem; }
-          body .wrapper #sidebar .socialNetwork a:hover {
-            color: #ABCFEB; }
+      /* end .devideNavAndHitline */
+      /* end .hotlineNumber */ }
       body .wrapper #sidebar .devideNavAndHitline {
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
-        height: 100%;
-        /* end .nav */
-        /* end .hotlineNumber */ }
+        height: auto;
+        /* end .socialNetwork*/
+        /* end .nav */ }
+        body .wrapper #sidebar .devideNavAndHitline .socialNetwork {
+          width: 100%;
+          height: 2.5rem;
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: flex-start;
+          margin-left: 2rem; }
+          body .wrapper #sidebar .devideNavAndHitline .socialNetwork a {
+            color: #518EBD;
+            margin: 0 0.4rem; }
+            body .wrapper #sidebar .devideNavAndHitline .socialNetwork a:hover {
+              color: #ABCFEB; }
         body .wrapper #sidebar .devideNavAndHitline .nav ul {
           margin-left: 2rem;
           margin-top: 3rem; }
@@ -51,35 +52,31 @@ body {
               letter-spacing: 1px; }
               body .wrapper #sidebar .devideNavAndHitline .nav ul li a:hover {
                 text-decoration: underline; }
-        body .wrapper #sidebar .devideNavAndHitline .hotlineNumber {
-          display: flex;
-          flex-direction: column;
-          margin-top: 25rem; }
-          body .wrapper #sidebar .devideNavAndHitline .hotlineNumber .justLine {
-            margin-left: 2rem;
-            border: 1px solid #69A2CE;
-            width: 35%;
-            margin-bottom: 1rem; }
-          body .wrapper #sidebar .devideNavAndHitline .hotlineNumber ul {
-            margin-left: 2rem;
-            margin-bottom: 2.5rem; }
-            body .wrapper #sidebar .devideNavAndHitline .hotlineNumber ul li:nth-child(1), body .wrapper #sidebar .devideNavAndHitline .hotlineNumber ul li:nth-child(2) {
-              color: #69A2CE;
-              font-size: 0.8rem; }
-            body .wrapper #sidebar .devideNavAndHitline .hotlineNumber ul li:nth-child(3) {
-              color: white;
-              font-weight: bold;
-              padding-top: 0.75rem;
-              font-size: 0.9rem; }
+      body .wrapper #sidebar .hotlineNumber {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        margin-top: 50vh; }
+        body .wrapper #sidebar .hotlineNumber .justLine {
+          margin-left: 2rem;
+          border: 1px solid #69A2CE;
+          width: 35%;
+          margin-bottom: 1rem; }
+        body .wrapper #sidebar .hotlineNumber ul {
+          margin-left: 2rem;
+          margin-bottom: 2.5rem; }
+          body .wrapper #sidebar .hotlineNumber ul li:nth-child(1), body .wrapper #sidebar .hotlineNumber ul li:nth-child(2) {
+            color: #69A2CE;
+            font-size: 0.8rem; }
+          body .wrapper #sidebar .hotlineNumber ul li:nth-child(3) {
+            color: white;
+            font-weight: bold;
+            padding-top: 0.75rem;
+            font-size: 0.9rem; }
     body .wrapper #content {
-      min-height: 100vh;
-      transition: all 0.3s;
-      position: absolute;
-      top: 0;
-      right: 0;
       background: #FFF; }
       body .wrapper #content #topLogoContent {
-        height: 2.5rem;
+        height: 3rem;
         background-color: white;
         display: flex;
         flex-direction: row;
@@ -91,21 +88,33 @@ body {
           justify-content: flex-start;
           align-items: center;
           margin-left: 1rem;
-          height: 1.6rem; }
+          height: 1.6rem;
+          width: auto; }
+          body .wrapper #content #topLogoContent .logoContent #sidebarCollapse {
+            display: none; }
+          @media (max-width: 768px) {
+            body .wrapper #content #topLogoContent .logoContent #sidebarCollapse {
+              display: inline-block; } }
           body .wrapper #content #topLogoContent .logoContent .logoBL {
+            padding-right: 1rem;
             border-right: 1px solid #6FA0C0;
-            height: 80%;
+            height: auto;
             width: 30%; }
             body .wrapper #content #topLogoContent .logoContent .logoBL img {
-              width: 90%;
-              height: 90%; }
+              width: 100%;
+              height: 100%; }
           body .wrapper #content #topLogoContent .logoContent .logoV {
-            height: 100%;
-            width: 30%; }
+            height: auto;
+            width: 30%;
+            padding-left: 1rem; }
             body .wrapper #content #topLogoContent .logoContent .logoV img {
-              width: 80%;
-              height: 100%;
-              margin-left: 2rem; }
+              width: 100%;
+              height: 100%; }
+          @media (max-width: 576px) {
+            body .wrapper #content #topLogoContent .logoContent .logoBL {
+              display: none; }
+            body .wrapper #content #topLogoContent .logoContent .logoV {
+              display: none; } }
         body .wrapper #content #topLogoContent .askQuetions {
           display: flex;
           flex-direction: row;
@@ -120,6 +129,9 @@ body {
             text-decoration: underline;
             margin-left: 0.5rem;
             font-size: 0.9rem; }
+          @media (max-width: 1024px) {
+            body .wrapper #content #topLogoContent .askQuetions span {
+              font-size: 0.7rem; } }
       body .wrapper #content #fourPromoBlock {
         display: flex;
         flex-direction: column; }
@@ -128,10 +140,18 @@ body {
           height: 25rem;
           display: flex;
           flex-direction: row; }
+          @media (max-width: 480px) {
+            body .wrapper #content #fourPromoBlock .doubleColorBlock {
+              flex-direction: column;
+              height: auto; } }
           body .wrapper #content #fourPromoBlock .doubleColorBlock #blueBlock {
             width: 50%;
             height: 100%;
             background-color: #4282AD; }
+            @media (max-width: 480px) {
+              body .wrapper #content #fourPromoBlock .doubleColorBlock #blueBlock {
+                width: 100%;
+                height: calc(100% + 15%); } }
             body .wrapper #content #fourPromoBlock .doubleColorBlock #blueBlock .blockHeader {
               width: 100%;
               height: 2.5rem; }
@@ -142,6 +162,9 @@ body {
                 font-weight: bold;
                 text-align: right;
                 font-size: 2rem; }
+                @media (max-width: 480px) {
+                  body .wrapper #content #fourPromoBlock .doubleColorBlock #blueBlock .blockHeader h2 {
+                    font-size: 1.5rem; } }
             body .wrapper #content #fourPromoBlock .doubleColorBlock #blueBlock .blockImage {
               display: flex;
               justify-content: center;
@@ -153,12 +176,20 @@ body {
                 body .wrapper #content #fourPromoBlock .doubleColorBlock #blueBlock .blockImage .blockEye img {
                   width: 100%;
                   height: 100%; }
+                body .wrapper #content #fourPromoBlock .doubleColorBlock #blueBlock .blockImage .blockEye .blueEyeActive {
+                  display: none; }
+                body .wrapper #content #fourPromoBlock .doubleColorBlock #blueBlock .blockImage .blockEye .blueEyeNormal {
+                  display: block; }
             body .wrapper #content #fourPromoBlock .doubleColorBlock #blueBlock .blockProduct {
+              visibility: hidden;
               width: 100%;
               display: flex;
               flex-direction: row;
               justify-content: flex-start;
               margin-left: 2rem; }
+              @media (max-width: 480px) {
+                body .wrapper #content #fourPromoBlock .doubleColorBlock #blueBlock .blockProduct {
+                  margin-bottom: 1rem; } }
               body .wrapper #content #fourPromoBlock .doubleColorBlock #blueBlock .blockProduct .productImage {
                 width: 12%;
                 height: auto;
@@ -166,10 +197,21 @@ body {
                 body .wrapper #content #fourPromoBlock .doubleColorBlock #blueBlock .blockProduct .productImage img {
                   width: 100%;
                   height: 100%; }
+            body .wrapper #content #fourPromoBlock .doubleColorBlock #blueBlock:hover .blockHeader {
+              visibility: hidden; }
+            body .wrapper #content #fourPromoBlock .doubleColorBlock #blueBlock:hover .blockImage .blockEye .blueEyeActive {
+              display: block; }
+            body .wrapper #content #fourPromoBlock .doubleColorBlock #blueBlock:hover .blockImage .blockEye .blueEyeNormal {
+              display: none; }
+            body .wrapper #content #fourPromoBlock .doubleColorBlock #blueBlock:hover .blockProduct {
+              visibility: visible; }
           body .wrapper #content #fourPromoBlock .doubleColorBlock #redBlock {
             width: 50%;
             height: 100%;
             background-color: #CD5463; }
+            @media (max-width: 480px) {
+              body .wrapper #content #fourPromoBlock .doubleColorBlock #redBlock {
+                width: 100%; } }
             body .wrapper #content #fourPromoBlock .doubleColorBlock #redBlock .blockHeader {
               width: 100%;
               height: 2.5rem; }
@@ -182,6 +224,9 @@ body {
                 text-transform: uppercase;
                 font-weight: bold;
                 letter-spacing: 1px; }
+                @media (max-width: 480px) {
+                  body .wrapper #content #fourPromoBlock .doubleColorBlock #redBlock .blockHeader h2 {
+                    font-size: 1rem; } }
             body .wrapper #content #fourPromoBlock .doubleColorBlock #redBlock .blockImage {
               display: flex;
               justify-content: center;
@@ -194,11 +239,15 @@ body {
                   width: 100%;
                   height: 100%; }
             body .wrapper #content #fourPromoBlock .doubleColorBlock #redBlock .blockProduct {
+              visibility: hidden;
               width: 100%;
               display: flex;
               flex-direction: row;
               justify-content: flex-start;
               margin-left: 2rem; }
+              @media (max-width: 480px) {
+                body .wrapper #content #fourPromoBlock .doubleColorBlock #redBlock .blockProduct {
+                  margin-bottom: 1rem; } }
               body .wrapper #content #fourPromoBlock .doubleColorBlock #redBlock .blockProduct .productImage {
                 width: 12%;
                 height: auto;
@@ -206,13 +255,26 @@ body {
                 body .wrapper #content #fourPromoBlock .doubleColorBlock #redBlock .blockProduct .productImage img {
                   width: 100%;
                   height: 100%; }
+            body .wrapper #content #fourPromoBlock .doubleColorBlock #redBlock:hover .blockHeader {
+              visibility: hidden; }
+            body .wrapper #content #fourPromoBlock .doubleColorBlock #redBlock:hover .blockProduct {
+              visibility: visible; }
         body .wrapper #content #fourPromoBlock .doubleColorBlock {
           width: 100%;
-          height: 25rem; }
+          height: 25rem;
+          display: flex;
+          flex-direction: row; }
+          @media (max-width: 480px) {
+            body .wrapper #content #fourPromoBlock .doubleColorBlock {
+              flex-direction: column;
+              height: auto; } }
           body .wrapper #content #fourPromoBlock .doubleColorBlock #greenBlock {
             width: 50%;
             height: 100%;
             background-color: #2BB673; }
+            @media (max-width: 480px) {
+              body .wrapper #content #fourPromoBlock .doubleColorBlock #greenBlock {
+                width: 100%; } }
             body .wrapper #content #fourPromoBlock .doubleColorBlock #greenBlock .blockHeader {
               width: 100%;
               height: 2.5rem; }
@@ -225,6 +287,9 @@ body {
                 text-transform: uppercase;
                 font-weight: bold;
                 letter-spacing: 1px; }
+                @media (max-width: 480px) {
+                  body .wrapper #content #fourPromoBlock .doubleColorBlock #greenBlock .blockHeader h2 {
+                    font-size: 1rem; } }
             body .wrapper #content #fourPromoBlock .doubleColorBlock #greenBlock .blockImage {
               display: flex;
               justify-content: center;
@@ -237,11 +302,15 @@ body {
                   width: 100%;
                   height: 100%; }
             body .wrapper #content #fourPromoBlock .doubleColorBlock #greenBlock .blockProduct {
+              visibility: hidden;
               width: 100%;
               display: flex;
               flex-direction: row;
               justify-content: flex-start;
               margin-left: 2rem; }
+              @media (max-width: 480px) {
+                body .wrapper #content #fourPromoBlock .doubleColorBlock #greenBlock .blockProduct {
+                  margin-bottom: 1rem; } }
               body .wrapper #content #fourPromoBlock .doubleColorBlock #greenBlock .blockProduct .productImage {
                 width: 12%;
                 height: auto;
@@ -249,10 +318,17 @@ body {
                 body .wrapper #content #fourPromoBlock .doubleColorBlock #greenBlock .blockProduct .productImage img {
                   width: 100%;
                   height: 100%; }
+            body .wrapper #content #fourPromoBlock .doubleColorBlock #greenBlock:hover .blockHeader {
+              visibility: hidden; }
+            body .wrapper #content #fourPromoBlock .doubleColorBlock #greenBlock:hover .blockProduct {
+              visibility: visible; }
           body .wrapper #content #fourPromoBlock .doubleColorBlock #yellowBlock {
             width: 50%;
             height: 100%;
             background-color: #FBB040; }
+            @media (max-width: 480px) {
+              body .wrapper #content #fourPromoBlock .doubleColorBlock #yellowBlock {
+                width: 100%; } }
             body .wrapper #content #fourPromoBlock .doubleColorBlock #yellowBlock .blockHeader {
               width: 100%;
               height: 2.5rem; }
@@ -265,6 +341,9 @@ body {
                 text-transform: uppercase;
                 font-weight: bold;
                 letter-spacing: 1px; }
+                @media (max-width: 480px) {
+                  body .wrapper #content #fourPromoBlock .doubleColorBlock #yellowBlock .blockHeader h2 {
+                    font-size: 1rem; } }
             body .wrapper #content #fourPromoBlock .doubleColorBlock #yellowBlock .blockImage {
               display: flex;
               justify-content: center;
@@ -277,11 +356,15 @@ body {
                   width: 100%;
                   height: 100%; }
             body .wrapper #content #fourPromoBlock .doubleColorBlock #yellowBlock .blockProduct {
+              visibility: hidden;
               width: 100%;
               display: flex;
               flex-direction: row;
               justify-content: flex-start;
               margin-left: 2rem; }
+              @media (max-width: 480px) {
+                body .wrapper #content #fourPromoBlock .doubleColorBlock #yellowBlock .blockProduct {
+                  margin-bottom: 1rem; } }
               body .wrapper #content #fourPromoBlock .doubleColorBlock #yellowBlock .blockProduct .productImage {
                 width: 12%;
                 height: auto;
@@ -289,236 +372,307 @@ body {
                 body .wrapper #content #fourPromoBlock .doubleColorBlock #yellowBlock .blockProduct .productImage img {
                   width: 100%;
                   height: 100%; }
-    body .wrapper #promoCarousel {
-      background-color: #D1E4F3;
-      border: 1px solid black;
-      height: 5rem; }
-      body .wrapper #promoCarousel h1 {
-        text-align: center;
-        font-size: 4rem; }
-    body .wrapper #riskGroup {
-      background-image: url("../img/background.jpg");
-      background-repeat: no-repeat;
-      background-size: cover;
-      color: #FFFFFF; }
-      body .wrapper #riskGroup h2 {
-        font-size: 3.5rem;
-        font-weight: bold;
-        text-align: center;
-        padding-top: 3rem; }
-      body .wrapper #riskGroup .riskContent {
-        display: flex;
-        flex-direction: row; }
-        body .wrapper #riskGroup .riskContent .bigImgWithGirl {
-          z-index: 9;
-          width: 50%;
-          margin-top: 5rem;
-          display: flex;
-          justify-content: flex-end; }
-        body .wrapper #riskGroup .riskContent .riskDescription {
-          z-index: 10;
-          width: 50%;
-          margin-top: 5rem; }
-          body .wrapper #riskGroup .riskContent .riskDescription h3 {
-            font-size: 1.5rem;
-            font-weight: bold; }
-          body .wrapper #riskGroup .riskContent .riskDescription p {
-            margin-top: 1.5rem;
-            font-size: 0.9rem;
-            line-height: 1.6; }
-          body .wrapper #riskGroup .riskContent .riskDescription .singlePromoBtn {
-            margin-top: 1.5rem;
-            border: 2px solid #FFFFFF;
-            border-radius: 30px;
-            display: inline-block;
-            padding: 0.75rem 1.5rem;
-            text-decoration: none;
-            color: #FFFFFF; }
-            body .wrapper #riskGroup .riskContent .riskDescription .singlePromoBtn:hover {
-              background-color: #0C6DB6;
-              border: 2px solid #0C6DB6;
-              color: #FFFFFF; }
-          body .wrapper #riskGroup .riskContent .riskDescription .groupPromoBtn {
-            margin-top: 7rem;
-            position: relative;
-            right: 450px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center; }
-            body .wrapper #riskGroup .riskContent .riskDescription .groupPromoBtn .promoBtn {
-              margin-top: 1.5rem; }
-              body .wrapper #riskGroup .riskContent .riskDescription .groupPromoBtn .promoBtn li {
-                display: inline-block;
-                margin: 0 0.5rem; }
-                body .wrapper #riskGroup .riskContent .riskDescription .groupPromoBtn .promoBtn li a {
-                  font-weight: bold;
-                  font-size: 0.8rem;
-                  background-color: #FFF;
-                  color: #0C6DB6;
-                  text-decoration: none;
-                  display: inline-block;
-                  border-radius: 30px;
-                  padding: 0.75rem 1.5rem; }
-                  body .wrapper #riskGroup .riskContent .riskDescription .groupPromoBtn .promoBtn li a:hover {
-                    background-color: #0C6DB6;
-                    color: #FFF; }
-    body .wrapper #testAndMap {
-      background-color: #FFFFFF;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center; }
-      body .wrapper #testAndMap .testAndMapContent {
-        display: flex;
-        flex-direction: row;
-        width: 100%;
-        height: 35rem; }
-        body .wrapper #testAndMap .testAndMapContent .testOnline {
-          width: 50%;
-          box-shadow: 0px 2px 10px rgba(30, 161, 210, 0.62); }
-          body .wrapper #testAndMap .testAndMapContent .testOnline h2 {
-            margin-left: 2rem;
-            margin-top: 3rem;
-            font-size: 3rem;
-            font-weight: bold; }
-          body .wrapper #testAndMap .testAndMapContent .testOnline p {
-            margin-top: 2rem;
-            margin-left: 2rem;
-            font-size: 0.9rem;
-            line-height: 1.8; }
-            body .wrapper #testAndMap .testAndMapContent .testOnline p strong {
-              font-weight: bold; }
-          body .wrapper #testAndMap .testAndMapContent .testOnline .alignBtn {
-            margin: 2rem 0;
-            display: flex;
-            justify-content: center; }
-            body .wrapper #testAndMap .testAndMapContent .testOnline .alignBtn a {
-              font-size: 1.75rem;
-              background-color: #FFF;
-              color: #055797;
-              border: 2px solid #055797;
-              text-decoration: none;
-              display: inline-block;
-              border-radius: 50px;
-              padding: 1.2rem 1.5rem; }
-              body .wrapper #testAndMap .testAndMapContent .testOnline .alignBtn a:hover {
-                background-color: #0C6DB6;
-                color: #FFF; }
-          body .wrapper #testAndMap .testAndMapContent .testOnline .recomendation {
-            display: flex;
-            flex-direction: row;
-            margin-top: 10rem;
-            margin-left: 4rem; }
-            body .wrapper #testAndMap .testAndMapContent .testOnline .recomendation img {
-              width: 40px;
-              height: 50px; }
-            body .wrapper #testAndMap .testAndMapContent .testOnline .recomendation p {
-              padding: 0;
-              margin: 0;
-              margin-left: 0.5rem;
-              margin-top: 0.5rem;
-              line-height: 1.8;
-              font-weight: bold;
-              color: #18649E; }
-        body .wrapper #testAndMap .testAndMapContent .map {
-          background-image: url("../img/testAndMap/map.png");
-          background-position: center;
-          background-size: cover;
-          background-repeat: no-repeat;
-          width: 50%; }
-          body .wrapper #testAndMap .testAndMapContent .map h2 {
-            margin-left: 2rem;
-            margin-top: 3rem;
-            font-size: 3rem;
-            font-weight: bold;
-            color: #FFF; }
-          body .wrapper #testAndMap .testAndMapContent .map p {
-            margin-top: 2rem;
-            margin-left: 2rem;
-            color: #FFF; }
-          body .wrapper #testAndMap .testAndMapContent .map .alignBtn {
-            margin: 2rem 0;
-            display: flex;
-            justify-content: center; }
-            body .wrapper #testAndMap .testAndMapContent .map .alignBtn a {
-              font-size: 1.75rem;
-              background-color: #4282AD;
-              color: #FFF;
-              border: 2px solid #FFF;
-              text-decoration: none;
-              display: inline-block;
-              border-radius: 50px;
-              padding: 1.2rem 1.5rem; }
-              body .wrapper #testAndMap .testAndMapContent .map .alignBtn a:hover {
-                background-color: #0C6DB6;
-                color: #FFF; }
-      body .wrapper #testAndMap .testAndMapFooter {
-        -webkit-box-shadow: 0px 10px 20px 0px #9db8c2;
-        -moz-box-shadow: 0px 10px 20px 0px #9db8c2;
-        box-shadow: 0px 10px 20px 0px #9db8c2;
-        width: 100%; }
-        body .wrapper #testAndMap .testAndMapFooter p {
-          text-align: center;
-          font-family: 'Open Sans Condensed', sans-serif;
-          letter-spacing: 2px;
-          color: #C5C5C5;
+            body .wrapper #content #fourPromoBlock .doubleColorBlock #yellowBlock:hover .blockHeader {
+              visibility: hidden; }
+            body .wrapper #content #fourPromoBlock .doubleColorBlock #yellowBlock:hover .blockProduct {
+              visibility: visible; }
+      body .wrapper #content #promoCarousel {
+        background-color: #D1E4F3;
+        border: 1px solid black;
+        height: 5rem; }
+      body .wrapper #content #riskGroup {
+        background-image: url("../img/background.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        color: #FFFFFF; }
+        body .wrapper #content #riskGroup h2 {
           font-size: 3.5rem;
-          text-transform: uppercase;
-          padding: 2.5rem 0; }
-    body .wrapper #mainFooter {
-      width: 100%;
-      display: flex;
-      justify-content: center; }
-      body .wrapper #mainFooter .footerLogo {
-        width: 90%;
+          font-weight: bold;
+          text-align: center;
+          padding-top: 3rem; }
+          @media (max-width: 480px) {
+            body .wrapper #content #riskGroup h2 {
+              font-size: 2rem; } }
+        body .wrapper #content #riskGroup .riskContent {
+          display: flex;
+          flex-direction: row; }
+          @media (max-width: 480px) {
+            body .wrapper #content #riskGroup .riskContent {
+              justify-content: center;
+              align-items: center; } }
+          body .wrapper #content #riskGroup .riskContent .bigImgWithGirl {
+            z-index: 9;
+            width: 50%;
+            margin-top: 5rem;
+            display: flex;
+            justify-content: flex-end; }
+            @media (max-width: 480px) {
+              body .wrapper #content #riskGroup .riskContent .bigImgWithGirl {
+                display: none; } }
+          body .wrapper #content #riskGroup .riskContent .riskDescription {
+            z-index: 10;
+            width: 50%;
+            margin-top: 5rem; }
+            @media (max-width: 480px) {
+              body .wrapper #content #riskGroup .riskContent .riskDescription {
+                margin-top: 3rem;
+                display: flex;
+                flex-direction: column;
+                align-items: center; } }
+            body .wrapper #content #riskGroup .riskContent .riskDescription h3 {
+              font-size: 1.5rem;
+              font-weight: bold; }
+              @media (max-width: 480px) {
+                body .wrapper #content #riskGroup .riskContent .riskDescription h3 {
+                  font-size: 1.2rem;
+                  text-align: center; } }
+            body .wrapper #content #riskGroup .riskContent .riskDescription p {
+              margin-top: 1.5rem;
+              font-size: 0.9rem;
+              line-height: 1.6; }
+              @media (max-width: 480px) {
+                body .wrapper #content #riskGroup .riskContent .riskDescription p {
+                  font-size: 0.7rem;
+                  line-height: 1.4; } }
+            body .wrapper #content #riskGroup .riskContent .riskDescription .singlePromoBtn {
+              margin-top: 1.5rem;
+              border: 2px solid #FFFFFF;
+              border-radius: 30px;
+              display: inline-block;
+              padding: 0.75rem 1.5rem;
+              text-decoration: none;
+              color: #FFFFFF; }
+              body .wrapper #content #riskGroup .riskContent .riskDescription .singlePromoBtn:hover {
+                background-color: #0C6DB6;
+                border: 2px solid #0C6DB6;
+                color: #FFFFFF; }
+            body .wrapper #content #riskGroup .riskContent .riskDescription .groupPromoBtn {
+              margin-top: 7rem;
+              position: relative;
+              right: 450px;
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center; }
+              @media (max-width: 480px) {
+                body .wrapper #content #riskGroup .riskContent .riskDescription .groupPromoBtn {
+                  margin-top: 2rem;
+                  margin-bottom: 2rem;
+                  right: 0; } }
+              body .wrapper #content #riskGroup .riskContent .riskDescription .groupPromoBtn .promoBtn {
+                margin-top: 1.5rem; }
+                @media (max-width: 480px) {
+                  body .wrapper #content #riskGroup .riskContent .riskDescription .groupPromoBtn .promoBtn {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    margin-top: 0.5rem; } }
+                body .wrapper #content #riskGroup .riskContent .riskDescription .groupPromoBtn .promoBtn li {
+                  display: inline-block;
+                  margin: 0 0.5rem; }
+                  @media (max-width: 480px) {
+                    body .wrapper #content #riskGroup .riskContent .riskDescription .groupPromoBtn .promoBtn li {
+                      display: block;
+                      margin: 0.5rem 0; } }
+                  body .wrapper #content #riskGroup .riskContent .riskDescription .groupPromoBtn .promoBtn li a {
+                    font-weight: bold;
+                    font-size: 0.8rem;
+                    background-color: #FFF;
+                    color: #0C6DB6;
+                    text-decoration: none;
+                    display: inline-block;
+                    border-radius: 30px;
+                    padding: 0.75rem 1.5rem; }
+                    @media (max-width: 480px) {
+                      body .wrapper #content #riskGroup .riskContent .riskDescription .groupPromoBtn .promoBtn li a {
+                        padding: 0.5rem 1.2rem;
+                        font-size: 0.7rem; } }
+                    body .wrapper #content #riskGroup .riskContent .riskDescription .groupPromoBtn .promoBtn li a:hover {
+                      background-color: #0C6DB6;
+                      color: #FFF; }
+      body .wrapper #content #testAndMap {
+        background-color: #FFFFFF;
         display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        margin: 5rem 0; }
-        body .wrapper #mainFooter .footerLogo .footerCompanyProps ul li {
-          color: #9A9A9A;
-          margin-bottom: 0.75rem;
-          font-size: 0.8rem; }
-        body .wrapper #mainFooter .footerLogo .footerLogoItsoft {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; }
+        body .wrapper #content #testAndMap .testAndMapContent {
           display: flex;
           flex-direction: row;
-          align-items: center; }
-          body .wrapper #mainFooter .footerLogo .footerLogoItsoft ul {
-            margin-left: 1rem; }
-            body .wrapper #mainFooter .footerLogo .footerLogoItsoft ul li {
-              color: #9A9A9A;
-              font-size: 0.8rem; }
-              body .wrapper #mainFooter .footerLogo .footerLogoItsoft ul li:first-child {
-                border-bottom: 1px solid #9A9A9A;
-                padding-bottom: 1px;
-                margin-bottom: 0.5rem; }
-              body .wrapper #mainFooter .footerLogo .footerLogoItsoft ul li span {
+          width: 100%;
+          height: 35rem; }
+          @media (max-width: 480px) {
+            body .wrapper #content #testAndMap .testAndMapContent {
+              flex-direction: column;
+              height: auto; } }
+          body .wrapper #content #testAndMap .testAndMapContent .testOnline {
+            width: 50%;
+            box-shadow: 0px 2px 10px rgba(30, 161, 210, 0.62); }
+            @media (max-width: 480px) {
+              body .wrapper #content #testAndMap .testAndMapContent .testOnline {
+                width: 100%; } }
+            body .wrapper #content #testAndMap .testAndMapContent .testOnline h2 {
+              margin-left: 2rem;
+              margin-top: 3rem;
+              font-size: 3rem;
+              font-weight: bold; }
+              @media (max-width: 480px) {
+                body .wrapper #content #testAndMap .testAndMapContent .testOnline h2 {
+                  font-size: 2rem; } }
+            body .wrapper #content #testAndMap .testAndMapContent .testOnline p {
+              margin-top: 2rem;
+              margin-left: 2rem;
+              font-size: 0.9rem;
+              line-height: 1.8; }
+              @media (max-width: 480px) {
+                body .wrapper #content #testAndMap .testAndMapContent .testOnline p {
+                  font-size: 0.7rem;
+                  line-height: 1.6; } }
+              body .wrapper #content #testAndMap .testAndMapContent .testOnline p strong {
+                font-weight: bold; }
+            body .wrapper #content #testAndMap .testAndMapContent .testOnline .alignBtn {
+              margin: 2rem 0;
+              display: flex;
+              justify-content: center; }
+              body .wrapper #content #testAndMap .testAndMapContent .testOnline .alignBtn a {
+                font-size: 1.75rem;
+                background-color: #FFF;
+                color: #055797;
+                border: 2px solid #055797;
+                text-decoration: none;
+                display: inline-block;
+                border-radius: 50px;
+                padding: 1.2rem 1.5rem; }
+                body .wrapper #content #testAndMap .testAndMapContent .testOnline .alignBtn a:hover {
+                  background-color: #0C6DB6;
+                  color: #FFF; }
+            body .wrapper #content #testAndMap .testAndMapContent .testOnline .recomendation {
+              display: flex;
+              flex-direction: row;
+              margin-top: 10rem;
+              margin-left: 4rem; }
+              @media (max-width: 480px) {
+                body .wrapper #content #testAndMap .testAndMapContent .testOnline .recomendation {
+                  margin-top: 5rem;
+                  margin-right: 2rem;
+                  margin-bottom: 2rem; } }
+              body .wrapper #content #testAndMap .testAndMapContent .testOnline .recomendation img {
+                width: 40px;
+                height: 50px; }
+              body .wrapper #content #testAndMap .testAndMapContent .testOnline .recomendation p {
+                padding: 0;
+                margin: 0;
+                margin-left: 0.5rem;
+                margin-top: 0.5rem;
+                line-height: 1.8;
                 font-weight: bold;
-                font-style: italic;
-                font-size: 0.9rem; }
+                color: #18649E; }
+          body .wrapper #content #testAndMap .testAndMapContent .map {
+            background-image: url("../img/testAndMap/map.png");
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            width: 50%; }
+            @media (max-width: 480px) {
+              body .wrapper #content #testAndMap .testAndMapContent .map {
+                width: 100%; } }
+            body .wrapper #content #testAndMap .testAndMapContent .map h2 {
+              margin-left: 2rem;
+              margin-top: 3rem;
+              font-size: 3rem;
+              font-weight: bold;
+              color: #FFF; }
+              @media (max-width: 480px) {
+                body .wrapper #content #testAndMap .testAndMapContent .map h2 {
+                  font-size: 2rem; } }
+            body .wrapper #content #testAndMap .testAndMapContent .map p {
+              margin-top: 2rem;
+              margin-left: 2rem;
+              color: #FFF; }
+              @media (max-width: 480px) {
+                body .wrapper #content #testAndMap .testAndMapContent .map p {
+                  font-size: 0.8rem; } }
+            body .wrapper #content #testAndMap .testAndMapContent .map .alignBtn {
+              margin: 2rem 0;
+              display: flex;
+              justify-content: center; }
+              body .wrapper #content #testAndMap .testAndMapContent .map .alignBtn a {
+                font-size: 1.75rem;
+                background-color: #4282AD;
+                color: #FFF;
+                border: 2px solid #FFF;
+                text-decoration: none;
+                display: inline-block;
+                border-radius: 50px;
+                padding: 1.2rem 1.5rem; }
+                body .wrapper #content #testAndMap .testAndMapContent .map .alignBtn a:hover {
+                  background-color: #0C6DB6;
+                  color: #FFF; }
+        body .wrapper #content #testAndMap .testAndMapFooter {
+          -webkit-box-shadow: 0px 10px 20px 0px #9db8c2;
+          -moz-box-shadow: 0px 10px 20px 0px #9db8c2;
+          box-shadow: 0px 10px 20px 0px #9db8c2;
+          width: 100%; }
+          body .wrapper #content #testAndMap .testAndMapFooter p {
+            text-align: center;
+            font-family: 'Open Sans Condensed', sans-serif;
+            letter-spacing: 2px;
+            color: #C5C5C5;
+            font-size: 3.5rem;
+            text-transform: uppercase;
+            padding: 2.5rem 0; }
+            @media (max-width: 480px) {
+              body .wrapper #content #testAndMap .testAndMapFooter p {
+                font-size: 0.9rem;
+                padding: 1.5rem 0; } }
+      body .wrapper #content #mainFooter {
+        width: 100%;
+        display: flex;
+        justify-content: center; }
+        body .wrapper #content #mainFooter .footerLogo {
+          width: 90%;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          align-items: center;
+          margin: 5rem 0; }
+          @media (max-width: 480px) {
+            body .wrapper #content #mainFooter .footerLogo {
+              flex-direction: column;
+              margin: 2rem 0; } }
+          @media (max-width: 480px) {
+            body .wrapper #content #mainFooter .footerLogo .footerLogoValeant {
+              width: 50%;
+              margin-bottom: 1rem; } }
+          @media (max-width: 480px) {
+            body .wrapper #content #mainFooter .footerLogo .footerCompanyProps {
+              width: 50%;
+              margin-bottom: 1rem; } }
+          body .wrapper #content #mainFooter .footerLogo .footerCompanyProps ul li {
+            color: #9A9A9A;
+            margin-bottom: 0.75rem;
+            font-size: 0.8rem; }
+          body .wrapper #content #mainFooter .footerLogo .footerLogoItsoft {
+            display: flex;
+            flex-direction: row;
+            align-items: center; }
+            @media (max-width: 480px) {
+              body .wrapper #content #mainFooter .footerLogo .footerLogoItsoft {
+                width: 50%; } }
+            body .wrapper #content #mainFooter .footerLogo .footerLogoItsoft ul {
+              margin-left: 1rem; }
+              body .wrapper #content #mainFooter .footerLogo .footerLogoItsoft ul li {
+                color: #9A9A9A;
+                font-size: 0.8rem; }
+                body .wrapper #content #mainFooter .footerLogo .footerLogoItsoft ul li:first-child {
+                  border-bottom: 1px solid #9A9A9A;
+                  padding-bottom: 1px;
+                  margin-bottom: 0.5rem; }
+                body .wrapper #content #mainFooter .footerLogo .footerLogoItsoft ul li span {
+                  font-weight: bold;
+                  font-style: italic;
+                  font-size: 0.9rem; }
 
-#sidebar.active {
-  margin-left: -250px; }
-
-#content.active {
-  width: 100%; }
-
-@media (max-width: 768px) {
-  #sidebar {
-    margin-left: -250px; }
-
-  #sidebar.active {
-    margin-left: 0; }
-
-  #content {
-    width: 100%; }
-
-  #content.active {
-    width: calc(100% - 250px); }
-
-  #sidebarCollapse span {
-    display: none; } }
+/* end .body */
 
 /*# sourceMappingURL=style.css.map */

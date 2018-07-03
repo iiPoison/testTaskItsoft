@@ -13,6 +13,7 @@
     <!-- CSS -->
     <link href="./res/css/reset.css" type="text/css" rel="stylesheet">
     <link href="./res/css/style.css" type="text/css" rel="stylesheet">
+    <link href="./res/css/style2.css" type="text/css" rel="stylesheet">
     <!-- Scrollbar Custom CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
     <!-- Font Awsome -->
@@ -26,13 +27,6 @@
       font-family: 'Open Sans Condensed', sans-serif;
       font-family: 'Roboto', sans-serif;
     -->
-    <!-- вот этот код надо както интегрировать в sass файл -->
-    <style media="screen">
-      #content {
-        width: calc(100% - 250px);
-      }
-
-    </style>
 </head>
 
 <body>
@@ -40,15 +34,17 @@
     <div class="wrapper">
         <!-- Sidebar  -->
         <nav id="sidebar">
-          <!-- блок с иконками вендеров -->
-          <div class="socialNetwork">
-            <a href="#"><i class="fab fa-facebook-f "></i></a>
-            <a href="#"><i class="fab fa-twitter "></i></a>
-            <a href="#"><i class="fab fa-skype "></i></a>
-          </div>
 
           <!-- блок который делит nav и hotlineNumber и красиво выравнивает по space-between по вертикали -->
           <div class="devideNavAndHitline">
+
+            <!-- блок с иконками вендеров -->
+            <div class="socialNetwork">
+              <a href="#"><i class="fab fa-facebook-f "></i></a>
+              <a href="#"><i class="fab fa-twitter "></i></a>
+              <a href="#"><i class="fab fa-skype "></i></a>
+            </div>
+
             <!-- основная навигация на левом навигационом блоке -->
             <div class="nav">
               <ul>
@@ -62,16 +58,17 @@
               </ul>
             </div> <!-- end .nav -->
 
-            <!-- Блок с телефоном горячей линии -->
-            <div class="hotlineNumber">
-              <div class="justLine"></div>
-              <ul>
-                <li>Горячяя линия</li>
-                <li>по России</li>
-                <li>8-800-000-00-00</li>
-              </ul>
-            </div> <!-- end .hotlineNumber -->
           </div> <!-- end .devideNavAndHitline -->
+
+          <!-- Блок с телефоном горячей линии -->
+          <div class="hotlineNumber">
+            <div class="justLine"></div>
+            <ul>
+              <li>Горячяя линия</li>
+              <li>по России</li>
+              <li>8-800-000-00-00</li>
+            </ul>
+          </div> <!-- end .hotlineNumber -->
 
         </nav> <!-- end #sideBar -->
 
@@ -114,7 +111,8 @@
 
                 <div class="blockImage">
                   <div class="blockEye">
-                    <img src="./res/img/eyes/blue_eye_active.png">
+                    <img class="blueEyeActive" src="./res/img/eyes/blue_eye_active.png">
+                    <img class="blueEyeNormal" src="./res/img/eyes/blue_eye_normal.png">
                   </div>
                 </div>
 
@@ -168,7 +166,7 @@
 
                 <div class="blockProduct">
                   <div class="productImage">
-                    <img src="./res/img/product/lutein_child.png" alt="Лютеин детский">
+                    <img src="./res/img/product/lutein_child.png"  alt="Лютеин детский">
                   </div>
 
                   <div class="productImage">
@@ -190,7 +188,7 @@
 
                 <div class="blockProduct">
                   <div class="productImage">
-                    <img src="./res/img/product/lutein_child.png" alt="Лютеин детский">
+                    <img src="./res/img/product/lutein_child.png"  alt="Лютеин детский">
                   </div>
 
                   <div class="productImage">
@@ -323,7 +321,11 @@
     <!-- jQuery Custom Scroller CDN -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
 
+    <!-- Sidebar Collaps -->
     <script src="./res/js/sidebarCollaps.js"></script>
+    <!--<script src="./res/js/tooltip.js"></script>-->
+
+
 
 </body>
 
