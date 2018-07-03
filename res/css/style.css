@@ -94,7 +94,8 @@ body {
             display: none; }
           @media (max-width: 768px) {
             body .wrapper #content #topLogoContent .logoContent #sidebarCollapse {
-              display: inline-block; } }
+              display: inline-block;
+              margin-right: 1rem; } }
           body .wrapper #content #topLogoContent .logoContent .logoBL {
             padding-right: 1rem;
             border-right: 1px solid #6FA0C0;
@@ -150,8 +151,7 @@ body {
             background-color: #4282AD; }
             @media (max-width: 480px) {
               body .wrapper #content #fourPromoBlock .doubleColorBlock #blueBlock {
-                width: 100%;
-                height: calc(100% + 15%); } }
+                width: 100%; } }
             body .wrapper #content #fourPromoBlock .doubleColorBlock #blueBlock .blockHeader {
               width: 100%;
               height: 2.5rem; }
@@ -165,6 +165,9 @@ body {
                 @media (max-width: 480px) {
                   body .wrapper #content #fourPromoBlock .doubleColorBlock #blueBlock .blockHeader h2 {
                     font-size: 1.5rem; } }
+                @media (max-width: 768px) {
+                  body .wrapper #content #fourPromoBlock .doubleColorBlock #blueBlock .blockHeader h2 {
+                    font-size: 1.75rem; } }
             body .wrapper #content #fourPromoBlock .doubleColorBlock #blueBlock .blockImage {
               display: flex;
               justify-content: center;
@@ -227,6 +230,9 @@ body {
                 @media (max-width: 480px) {
                   body .wrapper #content #fourPromoBlock .doubleColorBlock #redBlock .blockHeader h2 {
                     font-size: 1rem; } }
+                @media (max-width: 768px) {
+                  body .wrapper #content #fourPromoBlock .doubleColorBlock #redBlock .blockHeader h2 {
+                    font-size: 1.1rem; } }
             body .wrapper #content #fourPromoBlock .doubleColorBlock #redBlock .blockImage {
               display: flex;
               justify-content: center;
@@ -290,6 +296,9 @@ body {
                 @media (max-width: 480px) {
                   body .wrapper #content #fourPromoBlock .doubleColorBlock #greenBlock .blockHeader h2 {
                     font-size: 1rem; } }
+                @media (max-width: 768px) {
+                  body .wrapper #content #fourPromoBlock .doubleColorBlock #greenBlock .blockHeader h2 {
+                    font-size: 1.1rem; } }
             body .wrapper #content #fourPromoBlock .doubleColorBlock #greenBlock .blockImage {
               display: flex;
               justify-content: center;
@@ -344,6 +353,9 @@ body {
                 @media (max-width: 480px) {
                   body .wrapper #content #fourPromoBlock .doubleColorBlock #yellowBlock .blockHeader h2 {
                     font-size: 1rem; } }
+                @media (max-width: 768px) {
+                  body .wrapper #content #fourPromoBlock .doubleColorBlock #yellowBlock .blockHeader h2 {
+                    font-size: 1.1rem; } }
             body .wrapper #content #fourPromoBlock .doubleColorBlock #yellowBlock .blockImage {
               display: flex;
               justify-content: center;
@@ -390,7 +402,7 @@ body {
           font-weight: bold;
           text-align: center;
           padding-top: 3rem; }
-          @media (max-width: 480px) {
+          @media (max-width: 768px) {
             body .wrapper #content #riskGroup h2 {
               font-size: 2rem; } }
         body .wrapper #content #riskGroup .riskContent {
@@ -409,6 +421,13 @@ body {
             @media (max-width: 480px) {
               body .wrapper #content #riskGroup .riskContent .bigImgWithGirl {
                 display: none; } }
+            @media (max-width: 768px) {
+              body .wrapper #content #riskGroup .riskContent .bigImgWithGirl {
+                width: auto;
+                height: 50%; }
+                body .wrapper #content #riskGroup .riskContent .bigImgWithGirl img {
+                  height: 75%;
+                  width: 75%; } }
           body .wrapper #content #riskGroup .riskContent .riskDescription {
             z-index: 10;
             width: 50%;
@@ -419,6 +438,9 @@ body {
                 display: flex;
                 flex-direction: column;
                 align-items: center; } }
+            @media (max-width: 768px) {
+              body .wrapper #content #riskGroup .riskContent .riskDescription {
+                margin-right: 1rem; } }
             body .wrapper #content #riskGroup .riskContent .riskDescription h3 {
               font-size: 1.5rem;
               font-weight: bold; }
@@ -426,6 +448,9 @@ body {
                 body .wrapper #content #riskGroup .riskContent .riskDescription h3 {
                   font-size: 1.2rem;
                   text-align: center; } }
+              @media (max-width: 768px) {
+                body .wrapper #content #riskGroup .riskContent .riskDescription h3 {
+                  font-size: 1.5rem; } }
             body .wrapper #content #riskGroup .riskContent .riskDescription p {
               margin-top: 1.5rem;
               font-size: 0.9rem;
@@ -433,6 +458,10 @@ body {
               @media (max-width: 480px) {
                 body .wrapper #content #riskGroup .riskContent .riskDescription p {
                   font-size: 0.7rem;
+                  line-height: 1.4; } }
+              @media (max-width: 768px) {
+                body .wrapper #content #riskGroup .riskContent .riskDescription p {
+                  font-size: 0.8rem;
                   line-height: 1.4; } }
             body .wrapper #content #riskGroup .riskContent .riskDescription .singlePromoBtn {
               margin-top: 1.5rem;
@@ -458,10 +487,15 @@ body {
                 body .wrapper #content #riskGroup .riskContent .riskDescription .groupPromoBtn {
                   margin-top: 2rem;
                   margin-bottom: 2rem;
-                  right: 0; } }
+                  position: static; } }
+              @media (max-width: 768px) {
+                body .wrapper #content #riskGroup .riskContent .riskDescription .groupPromoBtn {
+                  margin-top: 2rem;
+                  margin-bottom: 2rem;
+                  right: 50%; } }
               body .wrapper #content #riskGroup .riskContent .riskDescription .groupPromoBtn .promoBtn {
                 margin-top: 1.5rem; }
-                @media (max-width: 480px) {
+                @media (max-width: 768px) {
                   body .wrapper #content #riskGroup .riskContent .riskDescription .groupPromoBtn .promoBtn {
                     display: flex;
                     flex-direction: column;
@@ -470,7 +504,7 @@ body {
                 body .wrapper #content #riskGroup .riskContent .riskDescription .groupPromoBtn .promoBtn li {
                   display: inline-block;
                   margin: 0 0.5rem; }
-                  @media (max-width: 480px) {
+                  @media (max-width: 768px) {
                     body .wrapper #content #riskGroup .riskContent .riskDescription .groupPromoBtn .promoBtn li {
                       display: block;
                       margin: 0.5rem 0; } }
@@ -505,6 +539,9 @@ body {
             body .wrapper #content #testAndMap .testAndMapContent {
               flex-direction: column;
               height: auto; } }
+          @media (max-width: 768px) {
+            body .wrapper #content #testAndMap .testAndMapContent {
+              height: auto; } }
           body .wrapper #content #testAndMap .testAndMapContent .testOnline {
             width: 50%;
             box-shadow: 0px 2px 10px rgba(30, 161, 210, 0.62); }
@@ -519,12 +556,19 @@ body {
               @media (max-width: 480px) {
                 body .wrapper #content #testAndMap .testAndMapContent .testOnline h2 {
                   font-size: 2rem; } }
+              @media (max-width: 768px) {
+                body .wrapper #content #testAndMap .testAndMapContent .testOnline h2 {
+                  font-size: 2rem; } }
             body .wrapper #content #testAndMap .testAndMapContent .testOnline p {
               margin-top: 2rem;
               margin-left: 2rem;
               font-size: 0.9rem;
               line-height: 1.8; }
               @media (max-width: 480px) {
+                body .wrapper #content #testAndMap .testAndMapContent .testOnline p {
+                  font-size: 0.7rem;
+                  line-height: 1.6; } }
+              @media (max-width: 768px) {
                 body .wrapper #content #testAndMap .testAndMapContent .testOnline p {
                   font-size: 0.7rem;
                   line-height: 1.6; } }
@@ -551,7 +595,7 @@ body {
               flex-direction: row;
               margin-top: 10rem;
               margin-left: 4rem; }
-              @media (max-width: 480px) {
+              @media (max-width: 768px) {
                 body .wrapper #content #testAndMap .testAndMapContent .testOnline .recomendation {
                   margin-top: 5rem;
                   margin-right: 2rem;
@@ -585,6 +629,9 @@ body {
               @media (max-width: 480px) {
                 body .wrapper #content #testAndMap .testAndMapContent .map h2 {
                   font-size: 2rem; } }
+              @media (max-width: 768px) {
+                body .wrapper #content #testAndMap .testAndMapContent .map h2 {
+                  font-size: 2rem; } }
             body .wrapper #content #testAndMap .testAndMapContent .map p {
               margin-top: 2rem;
               margin-left: 2rem;
@@ -592,6 +639,10 @@ body {
               @media (max-width: 480px) {
                 body .wrapper #content #testAndMap .testAndMapContent .map p {
                   font-size: 0.8rem; } }
+              @media (max-width: 768px) {
+                body .wrapper #content #testAndMap .testAndMapContent .map p {
+                  font-size: 0.7rem;
+                  line-height: 1.6; } }
             body .wrapper #content #testAndMap .testAndMapContent .map .alignBtn {
               margin: 2rem 0;
               display: flex;
@@ -623,7 +674,11 @@ body {
             padding: 2.5rem 0; }
             @media (max-width: 480px) {
               body .wrapper #content #testAndMap .testAndMapFooter p {
-                font-size: 0.9rem;
+                font-size: 0.8rem;
+                padding: 1.5rem 0; } }
+            @media (max-width: 768px) {
+              body .wrapper #content #testAndMap .testAndMapFooter p {
+                font-size: 1.2rem;
                 padding: 1.5rem 0; } }
       body .wrapper #content #mainFooter {
         width: 100%;
@@ -644,14 +699,26 @@ body {
             body .wrapper #content #mainFooter .footerLogo .footerLogoValeant {
               width: 50%;
               margin-bottom: 1rem; } }
+          @media (max-width: 768px) {
+            body .wrapper #content #mainFooter .footerLogo .footerLogoValeant {
+              width: 30%; }
+              body .wrapper #content #mainFooter .footerLogo .footerLogoValeant img {
+                width: 90%;
+                height: auto; } }
           @media (max-width: 480px) {
             body .wrapper #content #mainFooter .footerLogo .footerCompanyProps {
               width: 50%;
               margin-bottom: 1rem; } }
+          @media (max-width: 768px) {
+            body .wrapper #content #mainFooter .footerLogo .footerCompanyProps {
+              width: 30%; } }
           body .wrapper #content #mainFooter .footerLogo .footerCompanyProps ul li {
             color: #9A9A9A;
             margin-bottom: 0.75rem;
             font-size: 0.8rem; }
+            @media (max-width: 768px) {
+              body .wrapper #content #mainFooter .footerLogo .footerCompanyProps ul li {
+                font-size: 0.65rem; } }
           body .wrapper #content #mainFooter .footerLogo .footerLogoItsoft {
             display: flex;
             flex-direction: row;
@@ -659,11 +726,20 @@ body {
             @media (max-width: 480px) {
               body .wrapper #content #mainFooter .footerLogo .footerLogoItsoft {
                 width: 50%; } }
+            @media (max-width: 768px) {
+              body .wrapper #content #mainFooter .footerLogo .footerLogoItsoft {
+                width: 30%; }
+                body .wrapper #content #mainFooter .footerLogo .footerLogoItsoft img {
+                  width: 90%;
+                  height: auto; } }
             body .wrapper #content #mainFooter .footerLogo .footerLogoItsoft ul {
               margin-left: 1rem; }
               body .wrapper #content #mainFooter .footerLogo .footerLogoItsoft ul li {
                 color: #9A9A9A;
                 font-size: 0.8rem; }
+                @media (max-width: 768px) {
+                  body .wrapper #content #mainFooter .footerLogo .footerLogoItsoft ul li {
+                    font-size: 0.65rem; } }
                 body .wrapper #content #mainFooter .footerLogo .footerLogoItsoft ul li:first-child {
                   border-bottom: 1px solid #9A9A9A;
                   padding-bottom: 1px;
