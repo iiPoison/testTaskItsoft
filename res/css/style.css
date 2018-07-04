@@ -388,10 +388,9 @@ body {
               visibility: hidden; }
             body .wrapper #content #fourPromoBlock .doubleColorBlock #yellowBlock:hover .blockProduct {
               visibility: visible; }
-      body .wrapper #content #promoCarousel {
-        background-color: #D1E4F3;
-        border: 1px solid black;
-        height: 5rem; }
+      body .wrapper #content #promoCarousel .carousel-item img {
+        height: 50%;
+        width: 50%; }
       body .wrapper #content #riskGroup {
         background-image: url("../img/background.jpg");
         background-repeat: no-repeat;

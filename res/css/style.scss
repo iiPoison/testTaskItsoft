@@ -482,9 +482,14 @@ body {
         }
       }
       #promoCarousel {
-        background-color: #D1E4F3;
-        border: 1px solid black;
-        height: 5rem;
+
+        .carousel-item {
+          img {
+            height: 50%;
+            width: 50%;
+
+          }
+        }
       }
       #riskGroup {
         background-image: url("../img/background.jpg");
