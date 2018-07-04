@@ -14,6 +14,7 @@
     <link href="./res/css/reset.css" type="text/css" rel="stylesheet">
     <link href="./res/css/style.css" type="text/css" rel="stylesheet">
     <link href="./res/css/style2.css" type="text/css" rel="stylesheet">
+    <link href="./res/css/modalWindow.css.css" type="text/css" rel="stylesheet">
     <!-- Scrollbar Custom CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
     <!-- Font Awsome -->
@@ -94,7 +95,7 @@
             </div> <!-- end .logoContent -->
 
             <div class="askQuetions">
-              <i class="far fa-comment"></i><span>Задать вопрос производителю</span>
+              <a href="#" data-toggle="modal"><i class="far fa-comment"></i><span>Задать вопрос производителю</span></a>
             </div>
 
           </section> <!-- end #topLogo -->
@@ -310,6 +311,24 @@
         </div> <!-- end #contents --->
     </div>
 
+    <!-- Сплывающее окно -->
+    <div id="myModal1" class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                    <h4 class="modal-title">Заголовок модального окна 1</h4>
+                </div>
+                <div class="modal-body">
+                    Содержимое модального окна 1...
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>
+                    <button type="button" class="btn btn-primary">Сохранить изменения</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
     <!-- jQuery CDN - Slim version (=without AJAX) -->
@@ -323,8 +342,15 @@
 
     <!-- Sidebar Collaps -->
     <script src="./res/js/sidebarCollaps.js"></script>
-    <!--<script src="./res/js/tooltip.js"></script>-->
 
+    <!-- Всплывающее окное -->
+    <script>
+      $(function () {
+        $("#btn2").click(function () {
+            $("#myModal2").modal('show');
+        });
+      });
+    </script>
 
 
 </body>
